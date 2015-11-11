@@ -425,7 +425,7 @@
               var select = options.commands[ activeCommandI ].select;
 
               if( select ){
-                select.apply( ele );
+                select.apply( ele, [ e ] );
                 activeCommandI = undefined;
               }
             }
